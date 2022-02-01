@@ -54,7 +54,7 @@ describe('Turn', function() {
     const turn = new Turn(card, 'stoat');
 
     expect(turn.evaluateGuess()).to.be.a('function');
-    expect(turn.evaluateGuess()).to.be.boolean());
+    expect(turn.evaluateGuess()).to.be.boolean();
   });
 
   it('should give feedback', function() {
