@@ -25,4 +25,11 @@ describe('Turn', function() {
     expect(turn.currentCard).to.be.an.instanceOf(Card);
     expect(turn.currentCard.correctAnswer).to.equal('stoat');
   });
+
+  it('should be able to take in a string representing the user\'s guess', function() {
+    const card = new Card(1, 'What is Kim\'s favorite animal?', ['penguin', 'armadillo', 'stoat', 'tardigrade'], 'stoat');
+    const turn = new Turn(card, 'stoat');
+
+    expect(turn.guess).to.equal('stoat');
+  });
 });
