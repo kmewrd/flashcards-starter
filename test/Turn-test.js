@@ -61,7 +61,6 @@ describe('Turn', function() {
     const card2 = new Card(2, 'How many legs does a dog have?', [2, 3, 4], 4);
     const turn2 = new Turn(card2, 3);
 
-    expect(turn.giveFeedback()).to.be.a('function');
     expect(turn.giveFeedback()).to.equal('correct!');
     expect(turn2.giveFeedback()).to.equal('incorrect!');
   });
