@@ -51,7 +51,8 @@ describe('Turn', function() {
     const card = new Card(1, 'What is Kim\'s favorite animal?', ['penguin', 'armadillo', 'stoat', 'tardigrade'], 'stoat');
     const turn = new Turn(card, 'stoat');
 
-    expect(turn.evaluateGuess()).to.be.boolean();
+
+    expect(turn.evaluateGuess()).to.equal(true);
   });
 
   it('should give feedback', function() {
