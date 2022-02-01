@@ -32,4 +32,12 @@ describe('Turn', function() {
 
     expect(turn.guess).to.equal('stoat');
   });
+
+  it('should return the guess', function() {
+    const card = new Card(1, 'What is Kim\'s favorite animal?', ['penguin', 'armadillo', 'stoat', 'tardigrade'], 'stoat');
+    const turn = new Turn(card, 'stoat');
+
+    expect(turn.returnGuess()).to.be.a('function');
+    expect(turn.returnGuess()).to.equal('stoat');
+  });
 });
