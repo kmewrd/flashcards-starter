@@ -56,4 +56,12 @@ describe('Turn', function() {
     expect(turn.evaluateGuess()).to.be.a('function');
     expect(turn.evaluateGuess()).to.be.boolean());
   });
+
+  it('should give feedback', function() {
+    const card = new Card(1, 'What is Kim\'s favorite animal?', ['penguin', 'armadillo', 'stoat', 'tardigrade'], 'stoat');
+    const turn = new Turn(card, 'stoat');
+
+    expect(turn.giveFeedback()).to.be.a('function');
+    expect(turn.giveFeedback()).to.equal('correct!');
+  });
 });
