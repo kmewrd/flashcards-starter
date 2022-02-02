@@ -17,7 +17,7 @@ describe('Round', function() {
     const deck = new Deck(allCards);
     const round = new Round(deck);
 
-    expect(round).to.be.a('function');
+    expect(Round).to.be.a('function');
   });
 
   it('should be an instance of Round', function() {
