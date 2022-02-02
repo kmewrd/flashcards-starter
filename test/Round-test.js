@@ -112,5 +112,6 @@ describe('Round', function() {
     round.takeTurn(1);
 
     expect(round.turns).to.equal(2);
+    expect(round.incorrectGuesses).to.equal([2]);
   });
 });
