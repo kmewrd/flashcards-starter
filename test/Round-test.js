@@ -43,7 +43,7 @@ describe('Round', function() {
     const deck = new Deck(allCards);
     const round = new Round(deck);
 
-    expect(deck.currentCard).to.equal(card1);
+    expect(round.currentCard).to.equal(card1);
   });
 
   it('should return the current card', function() {
@@ -56,7 +56,7 @@ describe('Round', function() {
     const deck = new Deck(allCards);
     const round = new Round(deck);
 
-    expect(deck.returnCurentCard()).to.equal(card1);
+    expect(round.returnCurentCard()).to.equal(card1);
   });
 
   it('should keep track of turns', function() {
