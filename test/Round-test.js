@@ -95,7 +95,7 @@ describe('Round', function() {
     const deck = new Deck(allCards);
     const round = new Round(deck);
 
-    expect(round.incorrectGuesses).to.equal([]);
+    expect(round.incorrectGuesses).to.deep.equal([]);
   });
 
   it('should automatically change cards after each guess', function() {
