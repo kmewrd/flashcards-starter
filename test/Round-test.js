@@ -4,6 +4,7 @@ const expect = chai.expect;
 const Round = require('../src/Round');
 const Deck = require('../src/Deck');
 const Card = require('../src/Card');
+const Turn = require('../src/Turn');
 
 describe('Round', function() {
 
@@ -143,7 +144,7 @@ describe('Round', function() {
 
     round.takeTurn('reduce()');
 
-    expect(round.thisTurn).to.be.an.instanceof(Turn);
+    expect(round.turn).to.be.an.instanceof(Turn);
   });
 
   it('should return feedback when a guess is made', function() {
