@@ -2,6 +2,7 @@
 
 ## Abstract
 
+This game was a solo project created by Kim Ward during Mod 2 of Turing School of Software & Design. The purpose of this project was to familiarize students with TDD while creating an app that could be run from the command line.
 
 ## How to Run
 
