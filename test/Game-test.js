@@ -23,8 +23,19 @@ describe('Game', function() {
 
   it('should keep track of the current round', function() {
     const game = new Game();
+    game.start();
 
     expect(game.currentRound).to.be.an('object');
     expect(game.currentRound).to.be.an.instanceOf(Round);
+  });
+
+  it('should be able to start', function() {
+    const game = new Game();
+
+    game.start();
+
+    expect(game.currentRound.deck).to.equal(game.cards);
+    expect(game.currentRound.turns).to.equal(0);
+    expect(game.currentRound.incorrectGuesses).to.deep.equal([]);
   });
 });
