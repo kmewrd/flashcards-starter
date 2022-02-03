@@ -2,6 +2,7 @@
 
 ## Abstract
 
+
 ## How to Run
 
 1. Fork the repository
@@ -14,3 +15,6 @@ When the game is functioning appropriately, you will be prompted for each questi
 ![flash cards example gif](https://media.giphy.com/media/1zkb1q58eTiTH6D7wc/giphy.gif)
 
 ## Technologies Used
+
+- JavaScript
+- node.js
