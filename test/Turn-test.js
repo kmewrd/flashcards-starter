@@ -58,7 +58,6 @@ describe('Turn', () => {
   it('should give feedback', () => {
     const card = new Card(1, 'What is Kim\'s favorite animal?', ['penguin', 'armadillo', 'stoat', 'tardigrade'], 'stoat');
     const turn = new Turn(card, 'stoat');
-
     const card2 = new Card(2, 'How many legs does a dog have?', [2, 3, 4], 4);
     const turn2 = new Turn(card2, 3);
 
