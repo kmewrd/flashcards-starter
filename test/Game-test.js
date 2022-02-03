@@ -7,21 +7,21 @@ const Turn = require('../src/Turn');
 const Round = require('../src/Round');
 const Game = require('../src/Game');
 
-describe('Game', function() {
+describe('Game', () => {
 
-  it('should be a function', function() {
+  it('should be a function', () => {
     const game = new Game();
 
     expect(Game).to.be.a('function');
   });
 
-  it('should be an instance of Game', function() {
+  it('should be an instance of Game', () => {
     const game = new Game();
 
     expect(game).to.be.an.instanceOf(Game);
   });
 
-  it('should keep track of the current round', function() {
+  it('should keep track of the current round', () => {
     const game = new Game();
     game.start();
 
@@ -29,7 +29,7 @@ describe('Game', function() {
     expect(game.currentRound).to.be.an.instanceOf(Round);
   });
 
-  it('should be able to start', function() {
+  it('should be able to start', () => {
     const game = new Game();
 
     game.start();
