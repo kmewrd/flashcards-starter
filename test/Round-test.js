@@ -129,7 +129,7 @@ describe('Round', function() {
     round.takeTurn(1);
 
     expect(round.turns).to.equal(2);
-    expect(round.incorrectGuesses).to.equal([2]);
+    expect(round.incorrectGuesses).to.deep.equal([2]);
   });
 
   it('should instantiate a new Turn when a guess is made', function() {
